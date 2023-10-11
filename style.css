@@ -1,0 +1,117 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(21, 218, 3);
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-row: repeat(4, 1fr);
+    grid-template-areas:"header header header" 
+                        "contenido contenido cocoloco"
+                        "contenido contenido cocoloco"
+                        "widget1 widget2 cocoloco"
+                        "footer footer footer";
+margin: 20px 20px 20px 20px;
+gap: 20px;
+
+
+}
+
+.header{
+    background-color: cadetblue;
+    grid-area: header;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.contenido{
+    background-color: rgb(0, 255, 255);
+    grid-area: contenido;
+    height: 1000px;
+
+   
+}
+
+.cocoloco{
+    background-color: coral;
+    grid-area: cocoloco;
+}
+
+.widget1{
+background-color: crimson;
+grid-area: widget1;
+height: 100px;
+}
+
+.widget2{
+background-color: bisque;
+grid-area: widget2;
+}
+
+.footer{
+background-color: cornflowerblue;
+grid-area: footer;
+height: 50px;
+
+}
+
+.contenedor > div,
+.contenedor .cocoloco,
+.contenedor .footer,
+.contenedor .contenido,
+.contenedor .header,
+.contenido  .widget1,
+.contenido  .widget2{
+    padding: 20px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 300px) {
+    .contenedor{background-color: black;
+            grid-template-areas:"header header header" 
+                                "contenido contenido contenido"
+                                "contenido contenido contenido"
+                                "cocoloco cocoloco cocoloco"
+                                "widget1 widget1 widget2"
+                                "footer footer footer";}
+    .cocoloco {
+        height: 150px;
+    }
+    .contenido{
+        height: 200px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .contenedor{
+            grid-template-areas:"header header header" 
+                                "contenido contenido contenido"
+                                "contenido contenido contenido"
+                                "cocoloco cocoloco cocoloco"
+                                "widget1 widget1 widget2"
+                                "footer footer footer";}
+    .cocoloco {
+        height: 150px;
+    }
+    .contenido{
+        height: 1500px;
+    }
+    
+}
+
+
+
+img{
+    width: 60px;
+    height: 60px;
+}
+
+a{
+}
