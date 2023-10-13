@@ -8,10 +8,10 @@
 body{
     height:100%;
     width: 100%;
-    display: flex;
+    display: grid;
     justify-content: space-between;
     align-content:space-between; 
-    background-color: aqua;
+    background-color:whitesmoke;
     grid-template-columns: repeat(2, 1fr);}
 
 section{
@@ -20,11 +20,12 @@ section{
     gap:  10px;
     height: 40vh;
     width: 50vh;
-    align-items: center;
-    justify-items: center;
     border-radius: 10px;
-    background-color: rgb(230, 230, 230);
     padding: 50px;
+    margin-right:40%;
+    margin-top: 5%;
+    background-color:white;
+    box-shadow: 2px 5px 5px black;
 }   
 
 .boton
@@ -32,7 +33,7 @@ section{
     color: aliceblue;
     background-color: rgb(24, 39, 250);
     width: 70%;
-    height: 15%;
+    height: 90%;
     font-size:larger;
     font-family: 'Tilt Neon', sans-serif;
     border-radius: 10px;
@@ -44,6 +45,8 @@ width: 70%;
 height: 15%;
 border-radius: 10px;
 border: 0cm;
+height: 90%;
+border: blue 1px solid;
 }
 
 .password{
@@ -51,6 +54,7 @@ border: 0cm;
     height: 15%;
     border-radius: 10px;
     border: 0cm;
+    height: 90%;
 }
 
 .boton2{
@@ -63,28 +67,44 @@ border: 0cm;
     border-radius: 10px;
     border:0cm;
     margin-top:40px;
+    height: 60%;
 }
 
     
 
 hr{
     border-color: rgb(160, 160, 160);
-    width: 550px;}
+    width: 500px;}
 
 div{
     display: grid;
+    grid-template-columns: 1fr 1fr;
     align-content: center;
-    justify-content: space-between;
-    background-color: black;
-    width: 100vh;
+    justify-content: center;
+    width: 190vh;
     height: 100vh;
 
 }
 
 .parrafo{
     display: flex;
-
-    background-color: antiquewhite;
+    flex-direction: column;
+    margin-left: 30%;
     height: 40vh;
     width: 50vh;
 }
+h1{
+width: 100%;
+font-size: 60px;
+height: 60px;
+font-family: 'Tilt Neon', sans-serif;
+margin-bottom: 50px;
+color: mediumblue;
+}
+
+p{
+    display: grid;
+    font-size: 30px;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
